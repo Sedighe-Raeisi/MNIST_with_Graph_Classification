@@ -6,7 +6,7 @@ It consists of two parts,
   1. in the first part I define a function to convert an image to a graph
   2. in the second part I use a pre-defined command of sklearn to convert an image to its adjacency matrix as a NumPy array. 
 I make the model for each of these methods and evaluate the models. 
-## Method 1: Defining a function to convert an image to a graph. ACC=0.97
+## Method 1: Defining a function to convert an image to a graph. ACC=0.961
 ![image](https://user-images.githubusercontent.com/67642255/187019740-02f683bb-0808-47c8-85df-02a492620c92.png)
 
 Here we consider each pixel as a node. Each node is connected to its most close neighbors. If the node/ pixel is specified by i and j as its row and column position, then its most close neighbors would be :
@@ -43,7 +43,7 @@ The batch is defined when defining the data. We put two GCN layers at the beginn
 In the method of __init__ we should specify the input size of the first linear layer. It should be (hidden_channel x 784). 
 The hidden_channel is a number of neurons of GCN layer. The 784 is a number of nodes for each graph. Then we would have a batch of tensors to feed in the first linear layer. 
 I used the tensorflow for computing the accuracy. You should consider the batch size as the train_size/batch_size or test_size/batch_size has zero divide remaining. Otherwise, you may encounter errors. 
-## Method 2: SKlearn image to a graph. ACC=0.97
+## Method 2: SKlearn image to a graph. ACC=0.971
 ![image](https://user-images.githubusercontent.com/67642255/187019770-afcfe554-5fa4-475f-848a-48df57e085ec.png)
 
 We use "img_to_graph" to reach the adjacency matrix of the weighted graph of each image. Then we use  networkx ".from_numpy_array" command to get the networkx graph from the adjacency matrix. 
