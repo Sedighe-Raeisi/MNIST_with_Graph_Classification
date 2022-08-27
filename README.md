@@ -4,10 +4,11 @@ In this repository, I show how to convert an image to a graph and then classify 
 I try to simplify all parts as this repository is a guide for learning the graph classification task. 
 It consists of two parts, 
   1. in the first part I define a function to convert an image to a graph
-  2. in the second part I use a pre-defined command of sklearn to convert an image to its adjacency matrix as a NumPy array. 
-I make the model for each of these methods and evaluate the models. 
-I used the same model structure of the following links:
-https://www.kaggle.com/code/kmader/mnist-graph-deep-learning/notebook
+  2. in the second part I use a pre-defined command of sklearn to convert an image to its adjacency matrix as a NumPy array.   
+
+I make the model for each of these methods and evaluate the models.   
+I used the same model structure of the following links:   
+https://www.kaggle.com/code/kmader/mnist-graph-deep-learning/notebook   
 https://www.scss.tcd.ie/publications/theses/diss/2020/TCD-SCSS-DISSERTATION-2020-105.pdf
 ## Method 1: Defining a function to convert an image to a graph. ACC=0.961
 ![image](https://user-images.githubusercontent.com/67642255/187019740-02f683bb-0808-47c8-85df-02a492620c92.png)
