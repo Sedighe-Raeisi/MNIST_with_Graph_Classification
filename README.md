@@ -15,9 +15,9 @@ Here we consider each pixel as a node. Each node is connected to it's most close
   * i, j+1
   * i+1, j-1
   * i+1, j
-  * i+1, j+1
+  * i+1, j+1  
 we should define edge indexes as to connect each node/pixel to these neighbors. 
-Note that although we spesify each pixel with two indices (row and column) but we specify each node with one index. To convert two indices two one we can 
+Note that although we spesify each pixel with two indices (row and column) but we specify each node with one index. To convert two indices two one we can   
 node_index=i*28+j
 
 
